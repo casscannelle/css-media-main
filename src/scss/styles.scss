@@ -13,38 +13,94 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: $color-font;
+    width: 100vw;
+    position: relative;
+    height: 25vh;
+    overflow: hidden;
+
+    h1 {
+        margin-top: 4rem;
+        position: relative;
+        z-index: 9;
+        font-size: larger;
+    }
+}
 h1 {
-    color: $color-font;
+    color: $color-bg-default;
     text-align: center;
     width: 100%;
 }
 
-#imagens {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 100%;
-        margin: 0 auto;
-        
-        img {
-            height: 200px;
-            width: auto;
-            margin: 5px;
-            object-fit: fill;
-            object-position: bottom;
-            border: 1px solid #333;
-
-            &:hover {
-                opacity: 75%;
-                border-color: #33f;
-            }
-        }
-
-    }
-
+h2{
+    color: $color-bg-default;
+    text-align: center;
+    width: 100%;
 }
-header {
+
+#article{ 
+    width: 80%;
+    justify-content: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery {
+    /* Mobile first */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .image-gallery {
+      flex-direction: row;
+    }
+  }
+  
+  .image-item {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    /* center overlay content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+footer {
     background-color: $color-bg-default;
     width: 100vw;
     position: relative;
@@ -57,7 +113,6 @@ header {
         z-index: 9;
     }
 }
-
 .waves {
     bottom: 0;
     position: absolute;
@@ -110,3 +165,4 @@ header {
 }
 
 @import 'player';
+@import 'nav';
