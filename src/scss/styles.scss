@@ -15,7 +15,7 @@ body {
 
 header {
     background-color: $color-bg;
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 25vh;
     overflow: hidden;
@@ -90,7 +90,7 @@ p {
 
 footer {
     background-color: $color-highlights;
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 150px;
     overflow: hidden;

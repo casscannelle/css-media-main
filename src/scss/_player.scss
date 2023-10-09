@@ -47,16 +47,16 @@
             display: flex;
             align-items: center;
             border: none;
-            border-right: 2px solid #ccc;
-            border-left: 2px solid #ccc;
+            border-right: 2px solid #bdb8b8;
+            border-left: 2px solid #bdb8b8;
     
             .bar{
-                background: #e00;
+                background: rgb(182, 1, 1);
                 height: 4px;
                 flex: 1;
     
                 .inner{
-                    background: #ccc;
+                    background: #bdb8b8;
                     width: 0%;
                     height: 100%;
                 }
