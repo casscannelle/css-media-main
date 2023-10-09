@@ -1,18 +1,18 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
 
     &__item {
         color: #000;
         font-size: medium;
         text-decoration: none;
         position: relative;
+        padding: 1%;
+        
         &:hover {
-            color: #3d0909;
-            animation: toTop;
-            animation-duration: 1s;
+            color: $color-highlights;
+            font-weight: bold;
         }
     }
 }
